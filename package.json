@@ -1,0 +1,27 @@
+{
+  "name": "ielectx",
+  "version": "1.0.0",
+  "description": "secure e-voting system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemonDaddy22/iElectx.git"
+  },
+  "author": "Rohan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemonDaddy22/iElectx/issues"
+  },
+  "homepage": "https://github.com/DemonDaddy22/iElectx#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5",
+    "request": "^2.88.0",
+    "tesseract.js": "^1.0.19"
+  }
+}
