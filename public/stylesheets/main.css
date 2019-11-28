@@ -1,44 +1,125 @@
 body {
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: top;
-	background-image: url(https://images.unsplash.com/photo-1488342994276-7c3bc0742042?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+	font-family: 'Ubuntu', sans-serif;
+	background: #fafafa;
+}
+
+.topNav {
+	background-image: url("../images/header2.png");
+	height: 100vh;
 	width: 100%;
-	height: 100%;
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 0.02em;
-	font-weight: 400;
-	-webkit-font-smoothing: antialiased;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
-.glass-pane {
-	position: relative;
-	width: 450px;
-	height: 550px;
-	top: 170px;
-	left: calc(50% - 200px);
-	background: inherit;
-	border-radius: 2px;
-	overflow: hidden;
+.bg-nav {
+	background-color: #10283b;
 }
 
-.glass-pane:after {
-	content: '';
-	width: 600px;
-	height: 300px;
-	background: inherit;
-	position: absolute;
-	left: -25px;
-	left: 0;
-	top: -25px;
-	top: 0;
-	box-shadow: inset 0 0 0 200px rgba(185, 183, 183, 0.15);
-	filter: blur(12px);
+.black-logo {
+	font-size: 1.75rem;
+	text-shadow: 2px 2px #252525;
 }
-.image-upload {
+.black-logo:hover {
+	text-shadow: 3px 4px #252525 !important;
+	transition: all 0.3s linear;
+}
+
+.white-logo {
+	font-size: 1.75rem;
+	text-shadow: 1px 1px #b6b6b6a9;
+}
+
+.white-logo:hover {
+	text-shadow: 1.25px 1.25px #b8b8b8b4 !important;
+	transition: all 0.3s linear;
+}
+
+.logo-1 {
+	color: #e69fb0;
+}
+
+.logo-2 {
+	color: #d3e5a0;
+}
+
+.header-content {
+	margin-top: 10rem;
+	margin-left: 10rem;
+	letter-spacing: 0.9px;
+	text-shadow: 1px 1px #252525;
+}
+
+.header-content h1 {
+	text-shadow: 2px 2px #252525;
+}
+
+.main-content {
+	letter-spacing: 0.4px;
+}
+
+i {
+	font-size: 4rem;
+}
+
+.feature-container {
+	margin-top: 8rem;
+	width: 100%;
+	height: 800px;
+	background: url("https://wallpapersite.com/images/pages/pic_h/11843.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	position: relative;
-	margin-top: 50px;
-	text-align: center;
-	z-index: 1;
+}
+
+.white-shadow {
+	text-shadow: 1.5px 1.5px #979797;
+}
+
+.card {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+	text-shadow: 1.5px 1.5px #252525;
+	letter-spacing: 0.6px;
+}
+
+.hr-white {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.2),
+		rgba(255, 255, 255, 0.75),
+		rgba(255, 255, 255, 0.2)
+	);
+}
+
+.register {
+	background-image: url("https://www.streamnetworks.co.uk/wp-content/uploads/2019/01/networks.jpg");
+	width: 100%;
+	height: 120vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.register form {
+	background: rgba(255, 255, 255, 0.4);
+	padding-top: 2rem;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.footer {
+	background-color: #10283b;
+	height: 100px;
+	padding-top: 38px;
+}
+#footer-links {
+	float: right;
 }

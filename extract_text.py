@@ -3,7 +3,7 @@ import string
 import pytesseract
 
 def extract(image):
-    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract'
+    pytesseract.pytesseract.tesseract_cmd = 'D:\\Softwares\\Tesseract-OCR\\tesseract'
     t = pytesseract.image_to_string(Image.open(img))
     print(t)
     a1=[]
@@ -19,3 +19,4 @@ def extract(image):
 img = 'step4.png'
 extract(img)
 
+# GET REQD INFO OF VOTER USING A FORM AN THEN VERIFYING THE INFO AGAINST THE INFO CONATINED IN FINAL ARRAY
