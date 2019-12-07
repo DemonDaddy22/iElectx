@@ -115,6 +115,27 @@ i {
 	border-radius: 5px;
 }
 
+.login {
+	background-image: url("https://www.linuxfoundation.org/wp-content/uploads/2018/01/abstract_networking.jpg");
+	width: 100%;
+	height: 80vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.login form {
+	background: rgba(255, 255, 255, 0.4);
+	padding-top: 2rem;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.carousel-item img {
+	max-height: 90vh;
+}
+
 .footer {
 	background-color: #10283b;
 	height: 100px;

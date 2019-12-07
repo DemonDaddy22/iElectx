@@ -4,23 +4,36 @@ var mongoose = require('mongoose');
 var ejs = require('ejs');
 var bodyParser = require('body-parser'); 
 var request = require('request');
-var Tesseract = require('tesseract.js');
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb://localhost/capstone1', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/capstone2', { useNewUrlParser: true, useUnifiedTopology: true });
 
-var voterSchema = new mongoose.Schema({
-    name: String,
+var userSchema = new mongoose.Schema({
+    firstName: String,
+    middleName: String,
+    lastName: String,
     fatherName: String,
+    motherName: String,
     gender: String,
-    dob: String,
-    vid: String
+    date: Number,
+    month: Number,
+    year: Number,
+    contact: String,
+    address: String,
+    city: String,
+    state: String,
+    zip: String,
+    voterId: String,
+    email: {type: String, unique: true, required: true},
+    resetPasswordToken: String,
+    resetPasswordExpires: Date,
+    isAdmin: {type: Boolean, default: false}
 });
 
-var Voter = mongoose.model("Voter", voterSchema);
+var User = mongoose.model("Voter", userSchema);
 
 app.get('/', (req, res) => {
     res.render('landing');
@@ -33,6 +46,14 @@ app.post('/', (req, res) => {
 
 app.get('/register', (req, res) => {
     res.render('register');
+});
+
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+app.get('/about', (req, res) => {
+    res.render('about');
 });
 
 app.get('*', (req, res) => {

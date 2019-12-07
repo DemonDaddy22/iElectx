@@ -1,0 +1,60 @@
+<% include ./partials/header %>
+
+<div class="poll-page">
+    <h1 class="text-white font-weight-bold">
+        Choose the best options to make right poll 
+    </h1>
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="pname">Poll Name</label>
+                <input type="text" class="form-control" id="pname" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="psymbol">Poll Symbol</label>
+                <select id="psymbol" class="form-control">
+                    <option selected>Choose a symbol for your poll</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="vday">Voting Day</label>
+                <input type="text" class="form-control" id="vday" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="rday">Result Declaration Day</label>
+                <input type="text" class="form-control" id="rday" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+</div>
+
+<% include ./partials/footer %>
